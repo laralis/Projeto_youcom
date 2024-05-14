@@ -1,7 +1,9 @@
 import ProductCart from "../productCard";
 import { product } from "@/types/product";
 export async function ListProducts() {
-  const response = await fetch("http://localhost:3000/moveis");
+  const response = await fetch("http://localhost:3000/moveis", {
+    next: { revalidate: 30 },
+  });
   const products = await response.json();
   return (
     <section className="flex flex-col justify-center items-center mt-10">

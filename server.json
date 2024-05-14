@@ -6,7 +6,7 @@
       "imageURL": "https://i.imgur.com/n2vCTNM.png",
       "listPrice": "1500",
       "salePrice": "1200",
-      "favorited": false
+      "favorited": true
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "imageURL": "https://i.imgur.com/T7WG8c3.png",
       "listPrice": "5000",
       "salePrice": "4500",
-      "favorited": false
+      "favorited": true
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "imageURL": "https://i.imgur.com/RiqmwVm.png",
       "listPrice": "7000",
       "salePrice": "6200",
-      "favorited": false
+      "favorited": true
     },
     {
       "id": "4",
@@ -38,7 +38,7 @@
       "imageURL": "https://i.imgur.com/RVEhtMg.png",
       "listPrice": "7000",
       "salePrice": "6250",
-      "favorited": false
+      "favorited": true
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "imageURL": "https://i.imgur.com/X0ff9Ky.png",
       "listPrice": "5500",
       "salePrice": "5000",
-      "favorited": false
+      "favorited": true
     }
   ]
 }

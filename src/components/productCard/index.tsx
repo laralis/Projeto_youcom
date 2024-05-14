@@ -22,9 +22,9 @@ export default function ProductCart({
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
-        
       },
-     
+  
+
       body: JSON.stringify({ favorited: newFavoritedValue }),
     });
   }
@@ -37,7 +37,6 @@ export default function ProductCart({
           <h3 className=" font-semibold text-xl leading-tight">{name}</h3>
           <button
             onClick={() => {
-
               handleFavorites(!favorited);
             }}
           >
