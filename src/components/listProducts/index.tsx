@@ -17,6 +17,7 @@ export async function ListProducts() {
             salePrice={product.salePrice}
             listPrice={product.listPrice}
             urlImage={product.imageURL}
+            favorited={product.favorited}
           />
         ))}
       </div>

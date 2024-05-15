@@ -7,6 +7,7 @@ interface ProductCartProps {
   salePrice: number;
   listPrice: number;
   urlImage: string;
+  favorited: boolean;
 }
 export default function ProductCart({
   id,
@@ -14,16 +15,14 @@ export default function ProductCart({
   salePrice,
   listPrice,
   urlImage,
+  favorited,
 }: ProductCartProps) {
-  const [favorited, setFavorited] = useState(false);
   async function handleFavorites(newFavoritedValue: boolean) {
-    setFavorited(newFavoritedValue);
     await fetch(`http://localhost:3000/moveis/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-  
 
       body: JSON.stringify({ favorited: newFavoritedValue }),
     });

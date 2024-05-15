@@ -1,15 +1,9 @@
-"use client";
 import Image from "next/image";
 import logo from "../../../public/logo.svg";
-import { Heart } from "@phosphor-icons/react";
-import { useState } from "react";
+import { Heart } from "@phosphor-icons/react/dist/ssr";
 import Favorites from "../favorites";
 
 export default function Header() {
-  const [toggleFav, setToggleFav] = useState(false);
-  function toggleFavorites() {
-    setToggleFav(toggleFav ? false : true);
-  }
   return (
     <header className="flex justify-around items-center h-24 relative">
       <Image src={logo} alt={"Logo da página"} />
@@ -28,11 +22,12 @@ export default function Header() {
         </li>
       </ul>
       <ul className="flex gap-12">
-        <button onClick={toggleFavorites}>
+        <button>
           <Heart size={23} color="#000" weight="bold" />
         </button>
       </ul>
-      {toggleFav ? <Favorites /> : ""}
+
+      <Favorites />
     </header>
   );
 }
