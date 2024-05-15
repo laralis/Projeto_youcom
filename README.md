@@ -39,7 +39,7 @@ Teste a funcionalidade da aplicação
   npx json-server server.json 
   npm run dev
 ```
-  - Adicione um novo item no server.json
+  - Adicione um novo item no server.json ou clique no ícone de coração de um produto.
   - Espere 30 segundos. A página pode ser atualizada nesse período mas os produtos não serão atualizados
-  - Após 30 segundos, ao recarregar a página, os novos produtos são mostrados na tela.
+  - Após 30 segundos, ao recarregar a página, se você adicionou novos produtos ao servidor, estes serão mostrados na tela. Caso tenha clicado no ícone de coração de um produto, este será adicionado a lista de favoritos no canto superior direito e seu botão de favorito será preenchido.
 
